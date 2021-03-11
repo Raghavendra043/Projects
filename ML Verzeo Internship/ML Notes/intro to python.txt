@@ -1,0 +1,357 @@
+Download the Anaconda installer from https://www.anaconda.com/distribution/#windows
+Double click on the downloaded file to launch the installer*
+Click Next
+Read the licensing terms and click “I Agree”
+Select an install for “Just Me* ” unless you’re installing for all users (which requires Windows Administrator privileges) and click Next
+Select a destination folder to install Anaconda and click the Next button
+Check add Anaconda to your PATH environment variable
+Choose whether to register Anaconda as your default Python. Unless you plan on installing and running multiple versions of Anaconda or multiple versions of Python, accept the default and leave this box checked
+Click the Install button. If you want to watch the packages Anaconda is installing, click Show Details. Click the Next button
+After a successful installation you will see the “Thanks for installing Anaconda” dialog box
+
+
+to run the code in jupyter
+	ctrl+enter     -- cursor at the same shell
+	shift+enter -- cur at different shell
+go to par cell and click 'esc' to transfer it into command mode
+
+shift + tab to see the the functioning of a particular function 
+'library'."Tab" gives all the functions in the library
+
+	z.upper() ----   converts to upper case 
+	z.lower() -----     converts to lower case
+	z.lstripe() ----- removes space to the left
+	z.rstripe() ------ removes space to the right 
+
+***	z.replace("B","assignment")-----assigns B as the assignments in Z
+
+list.sort() ----- arranges in acending order
+list.reverse() ----arranges in decending order
+
+	
+
+    %s 
+dictionery sort ---.sort 
+sets are unordered 
+sets do not allow duplicates
+sets have all the functions like unuon , intersection , issubset by a.union(b)
+a.difference(b)------- a-a.intersection(b)
+a.symmertic_difference(b) --------  a.union(b)-a.intersection(b)
+tuple --- is immutable --- we cannoit reassign the values ina tuple
+but we can reassign a valu ein a list which is in a tuple
+if a Tuple has a variable as an element, even if w change the value oof the variible, value stored in the tuple is not changed
+we can use tuple as keys in dictionaries but 
+tuples and list are ordered
+sets and dic are not ordered
+
+
+
+numpy works only for list and tuple
+sys ----------------for  memory size
+sys.getsizeof() -----gives the memory size of ecah element
+	for numpyarray
+		a.itemsize functions as sys.getsizeof()
+zip(l1,l2)----------- converts into column 
+
+we cannot add elements in two lists but we can for numpyarays
+
+ 	reshape in numpy 
+ @@@!!!   slicing of np.arrays       --------- 11/7      at 8.33PM
+
+
+
+linspace -------- series -------- number of terms known
+range -------------series ------ common difference known
+
+
+axis =0 (moves vertically )and axis =1( moves horizontally)
+
+ravel(master replacement supported) and flattern((master replacement  not supported)master replacement supported)) converts to 1d array 
+
+
+
+np.random.randint(5,n,(x,y))   generates an array of x*y of randoms numbers from 5 to n-1
+	np.random.random_integers()
+	np.random.random((x,y))    creates random numbers between[0,1)
+for float random numbers ----------- from [a,b)
+		(b-a)*np.ran.random.......  +1
+
+np.dot(x,y)  is goin to give an output of matrix multiplication
+
+		tiling
+
+   %matplotib inline ------------ the graph generated within the cell
+
+matplotib.plot(x,y)---- draws the graphs
+
+	pandas
+in panda arrays we can modify the index
+
+if we add two panda arrays of different indexes then the index which are not common has th evalue NaN and th edatatype is float and the index is printed in alphabetical order 
+for multiindexing in panda arrays, we have to specify the indexes in list
+
+  s.apply(lambda x: x if x>50 else x+10)
+
+
+	csk --- comma saperated files 
+	tsk ------- tab sap files
+
+user.head()--------- prints   
+
+
+methods end with paranthesis 
+and attributes end with no paranthesis
+
+
+	move is a dataframe 
+
+move."coloumn".nunique
+move.'column'.unique
+move.describe 
+move.describe(include=all,subject)
+move.drop()
+move.pd.read()
+move.head()
+move.tail()
+		move.reset_index(inplace=true)
+move.title.sort()
+move.column.head()--- prints 5 rows
+move.move.'column'.str    ------- string methods 
+
+
+use astype to convert the datatype of a particular series ina a dtata frame 
+
+
+
+
+
+
+
+
+
+
+	we can rename the column of a datatype 
+
+		strings ----object data type 
+
+	groupby:
+it is used to describe according to a column 
+agg------- used to change the index of describe()
+@#$	liss.groupby("column_name").function()#like mean, mode#.plot(kind='barh')
+
+
+
+		##@get
+one hot encodingilock.[]:,num_:
+datrafrmae.embrakes.unique()
+			@@@###GET_DUMMIES
+
+
+
+
+		PROBABILITY AND DISTRIBUTION
+(need to import random package)	random.choice(array)   choses a random numbers from the array
+
+negative kurtosis
+
+	bernouli.rvs(p=,size=)  	p is the probability of a particular event
+bernoulli.stats()
+ 
+	hypothesis making 
+	alpha - 0.05
+	z-test(popuklation parameters)
+	t-test(population parem)
+	
+	values to p value(prob)
+	z table and t table 
+	z score to p values 
+	p=a
+	(log tables)
+
+
+
+		MACHINE LEARNING:
+LinkedIn.com/in/ahmed-aqib
+
+
+Regression -------- if the data has continious valus 
+classification ----- if the data is catagorical
+
+Supervised and Unsupervised learning in ML 
+
+cross validation 
+featuer selection
+	logistics regression
+	corellation
+Feature engineering
+
+ed exploratory data anylatics
+		DATA ANYLYTIC
+  Ask and get the data
+  get the data and ask
+  
+  data wrangling
+	cleaning the data
+  		1.data gathering
+		2.Asses thre data
+		3. data cleaning
+  Count the conclusions
+
+  visuvalising the data
+  
+           Data analytic ---- learn first .
+
+
+Knn --- K nearest neighbours
+k indicates number of similar data points to be taken
+
+
+euclidian distance:
+		= sqrt(sigma i=1 to n(xi-yi)^2)
+where xi is example data point and yi is training data point 
+
+
+Z test
+
+8360682123 
+
+eda -------- data understanding 
+
+median imputation---- filling the null values with median 
+mean imputation is filling the null values with the mean value of the data set
+mode imputation is choosen when there is categorical values
+
+ordinal columns, nomimnal ---------- categorigal data---- one hot encoding(giving 1's and 0's) and label encoding( giving numbers for each label ) 
+numerical data ------------ data scalling ( when there are numerical columns are present in the DF with different units)
+			two types --
+				standardisation converting data into mean = 0 and standard deviation into 1
+				Normalistaion--- converting all the values bet 0 to1 FORMULA  x-xmin / xmax - xmin
+Error Metrics
+	confusion metric : true positive , true negatives , false positives and false negatives
+	1. Accuracy :true positive plus true negatives / all		
+	2. precession : true positive / true positive plus false positive
+	3. recall :   true pos / true pos plus false neg 
+	4. F1 score : harmonic mean of both precession and recall
+for regression ---(numerical values)
+		1.Mean absoulete error is calculated
+		2. mean squared error
+		3.root mean squared error
+		4.Baseline model --- dataset where all the values are mea value
+		
+		5. r2_score = 1- MSE( model )/MSE ( Baseline )
+
+		Linear Regression
+assumptions:1. data should be lienar 
+	      2.no multicolinearity present ------ when the independent variables are corellated
+		it is found out by VIF : Variance inflation factior---test for multicollinearity
+			VIF>5 is considered as Multicollinear 
+in n dimension the linear surface is called - Hyper plane
+equation of Hyperloop
+
+y = w1x1 + w2x2 + w3x3...........+wnxn + c 
+
+	y= w * xT +cc 
+or 
+	y^ = x * wT+ c where T is Transpose
+we can predict the y value if w and c are known
+	
+	MSE = sigma (y-y^) ^ 2 / n -------- optimisation function
+argmin ---- values of it when a function including it is minimun
+	gradient descent --- 
+		1. initilise w = [0]
+		2. differentiate the function wrt w
+		3. w 1+i = w i - alpha { df / dw }
+			alpha is called learning rate ----  controlls the jumping value
+		if w i - w i+1 is 0 ,  then it has reached minimum 
+ what is sklearn
+		logistic Regression 
+it is a classification algoritm which draws a line to divide the two values.
+similar to linear regression we need to find a line with 'w' and 'c'
+when Yi * wT * Xi > 0 , then we have predicted the class label correctly
+
+Optimisation Function argmax( sigma Yi * wT * Xi )
+
+the dissadv of using the above optimisation function is if the points are at a greater distance then the error is decreased drastically even if the line fits the data the most
+ so we use another function called sigmoid
+				   sig( t ) = 1 / 1 + e^(-t)
+so the optimisation function is 
+				w = argmax( sigma 1/ 1+ e^ t)  where t = -Yi* wT* Xi
+differentiating the e^x term is an infinite series.  so, we apply a log function as it is monotonic and it has a simple differentiation. so the optimisation function turns out 
+				w = argmax( sigma log( 1/ 1+e^t ))   where t = -Yi* wT* Xi
+			=	w=argmax( sigma - Log(1 / 1+ e^t))  where t  = -Yi* wT * Xi
+by using argmax(-f(x)) = argmin(f(x))
+the final optimisation is 
+				w= argmin( sigma Log(1 / 1 +e^t ) )   where t  = -Yi* wT* Xi
+ 
+
+		Unsupervised Learning
+		clusterring --	K-means
+intra clustering distances 
+the sum of distances of the cluster points from the centroid of the cluster should be as min as possible
+inter cluster distance
+the distance bet the centroids of two clusters should as max as possible
+
+		Dunn index = min ( inter clus dis) / max (intra clus dis)
+MOre DUNN index, the cluster is well formed
+
+1. identify the K value     k---- no. of clusters( in k-means) k--- no. of closest datapoints( KNN)
+2. randomly assign k no. of points as centroids 
+3. calculating the distance between the centroids and all the other data points
+4. make K groups accord to the distance
+5. removing the centroid points and reassigining it by calculating the average
+6. this process is repeated several times until
+					the centroid points dosent change , until the points dosent change , until the sum of inter distances is same
+ 
+
+
+sum of all inter cluster distances is called INERTIA
+Knee point / ELBOW POINT ---- the points at which the graph of the inertia vs K value drops suddenly and then becomes linear
+KNEE points is the ideal K value
+
+			SVM--- support Vector Machine
+solved by using legranges multipliers and primal and then gradient Decent
+
+
+
+			for non linear data( spherical)
+kernal - trans from 2d to 3d 
+
+poly kernel --- 
+
+		Decission Tree
+root node < parent node < leaf node
+ID3 -- algorithm uses Enthropy and universal gains
+
+Entropy --------      Pi --------- probability of occurances of a target variable
+information gain ---- E (T) - E (T, X )
+
+
+	Decission Tree-------- Random Forest
+Ensembling------- midexed decission tree
+
+Sending subset of columns to each decession tree is called Bootstrap aggregation----------Bagging
+Ensembling of decision trees with the help of Bagging is called random forest 
+
+
+HYPERPARAMETER
+	sub-plot
+
+Theres  also a function called cat.codes via which you can see the converted categorical number values 
+drinks['continents'].cat.codes.head ()
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+		
